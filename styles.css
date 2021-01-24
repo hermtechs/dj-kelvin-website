@@ -167,3 +167,71 @@ padding: 2em 2em 2em 2em;
 progress{
     color: #fff;
 }
+
+/* ALBUMS SECTION */
+.audio-section{
+    background: rgb(224, 205, 205);
+}
+.albums-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.albums-container>*{
+    flex-basis: 30%;
+    min-width: 15em;
+    max-width: 100em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.album-card{
+    background:#fff;
+    padding: .3em;
+    border-radius: 5px;
+}
+.album-card img{
+    border-radius: .2em;
+}
+.album-card .sub-heading{
+    text-align: center;
+}
+.section-titles{
+    padding: 2rem;
+    color:rgb(19, 19, 189);
+}
+.title2{
+    margin-left:2rem;
+}
+
+/* TOURS SECTION */
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+   
+}
+.card-container >*{
+    flex-basis: 30%;
+    min-width: 12em;
+    max-width: 20em;
+}
+.card .card-text{
+   text-align: center;
+   background: #fff;
+   margin-top: -.4em;
+   padding: .5em;
+}
+.tours-section{
+    background:url(./images/tours-bg2.jpg);
+    background-color: rgb(87, 18, 199);
+    background-repeat: no-repeat;
+    background-blend-mode: saturation;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 5em;
+}
