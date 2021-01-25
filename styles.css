@@ -27,7 +27,7 @@ nav>*+*{
 .showcase{
     padding: 5em 2em;
     text-align: center;
-    height: 600px;
+    height: 500px;
     position: relative;
     z-index: 1000;
     color: blue;
@@ -156,7 +156,7 @@ video{
     justify-content: space-between;
 }
 .controls>*{
-padding: 2em 2em 2em 2em;
+padding: 2em;
 }
 .progress-bar{
  display: flex;
@@ -189,7 +189,8 @@ progress{
 
 .album-card{
     background:#fff;
-    padding: .3em;
+    padding: .2em;
+    padding-bottom: 1em;
     border-radius: 5px;
 }
 .album-card img{
@@ -246,7 +247,7 @@ progress{
 }
 .card .buy-tickets-btn{
     position: relative;
-    display: flex;
+    display: block;
     /* z-index: -1; */
     color: #fff;
     text-align: center;
@@ -260,6 +261,19 @@ progress{
  .card:hover img{
   position: relative;
   overflow: hidden;  
-  transform: translateY(-2em);
-  transition: 400ms ease-in-out;
+  transform: translateY(-1.5em);
+  transition: 250ms ease-in;
+}
+
+/* LIGHTBOX/ GALLERY */
+.section-gallery{
+    background: rgb(22, 1, 7);
+    padding-bottom: 2em;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:.2em;
+    margin: 1em;
+   
 }
