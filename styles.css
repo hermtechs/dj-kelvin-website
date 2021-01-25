@@ -170,7 +170,7 @@ progress{
 
 /* ALBUMS SECTION */
 .audio-section{
-    background: rgb(224, 205, 205);
+    background:#eee;
 }
 .albums-container{
     display: flex;
@@ -225,11 +225,15 @@ progress{
     background: #fff;
     
 }
-.card .card-text{
+ .card-text{
    text-align: center;
    background: #fff;
    margin-top: -.4em;
    padding: 1em;
+}
+.shop-product .card-text{
+    margin-top: 0em;   /*removing margin:-.4em from
+                                the text below shopping products*/
 }
 .tours-section{
     background:url(./images/tours-bg2.jpg);
@@ -240,7 +244,7 @@ progress{
     background-size: cover;
     padding-bottom: 5em;
 }
-.card img{
+.card .img{
     position: relative;
     margin-bottom: -2em;
     z-index: 2;
@@ -258,11 +262,28 @@ progress{
 .card:hover .buy-tickets-btn{
     z-index: 1;
 }
- .card:hover img{
+ .card:hover .img{
   position: relative;
   overflow: hidden;  
   transform: translateY(-1.5em);
   transition: 250ms ease-in;
+}
+/* SHOP SECTION */
+.product{
+    display: inline-block;
+    transform: scale(1.1);
+    transition: 250ms ease-in;
+}
+.product:hover{
+    transform: scale(1.2);
+}
+.shop-site-link{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 2em;
+    color: rgb(21, 21, 92);
+    font-weight: 900;
 }
 
 /* LIGHTBOX/ GALLERY */
@@ -275,5 +296,4 @@ progress{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap:.2em;
     margin: 1em;
-   
 }
