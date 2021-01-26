@@ -296,7 +296,7 @@ progress{
 
 /* LIGHTBOX/ GALLERY */
 .section-gallery{
-    background: rgb(22, 1, 7);
+    background: rgb(20, 20, 20);
     padding-bottom: 2em;
 }
 .gallery{
@@ -304,4 +304,18 @@ progress{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap:.2em;
     margin: 1em;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:4em;
+    color: #fff;
+    background: rgb(3, 3, 34);
+}
+footer a{
+    color: rgb(157, 157, 214);
+    padding: 0.4em;
 }
