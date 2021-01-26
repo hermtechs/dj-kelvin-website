@@ -27,7 +27,7 @@ nav>*+*{
 .showcase{
     padding: 5em 2em;
     text-align: center;
-    height: 500px;
+    height: 400px;
     position: relative;
     z-index: 1000;
     color: blue;
@@ -35,17 +35,17 @@ nav>*+*{
 }
 .show-case-text{
     z-index: 1000;
-    max-width: 700px;
+    max-width: 500px;
     margin: 0 auto;
 }
 .show-case-text h2{
-    font-size: clamp(2.5rem, 10vh, 3rem);
+    font-size: clamp(2rem, 10vh, 2.5rem);
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: .5em;
 }
 .show-case-text h3, .heading{
-    font-size: clamp(1.8rem, 10vh, 2.5rem);
+    font-size: clamp(1rem, 10vh, 2rem);
     text-transform: uppercase;
     line-height: 1.1;
     margin-bottom: .5em;
@@ -53,7 +53,7 @@ nav>*+*{
 }
 
 .show-case p{
-    font-size: clamp(2rem, 1rem 3rem);
+    font-size: clamp(2rem, 10vh 3rem);
     letter-spacing: 1px;
     margin-bottom: .5em;
     
@@ -61,7 +61,7 @@ nav>*+*{
 .btn{
     display: inline-block;
     letter-spacing: 1.5px;
-    padding: .12em 1em .12em 1em;
+    padding: .10em 1em .10em 1em;
     margin-top: .5rem;
     border-radius: 4.5px;
     background: rgb(13, 13, 112);
@@ -79,7 +79,7 @@ nav>*+*{
     position: absolute;
     top: 0;
     left: 0;
-    height: 550px;
+    height: 400px;
     object-fit: cover;
     z-index: -1;
 }
@@ -89,7 +89,7 @@ nav>*+*{
     z-index: -1;
     top: 0;
     left: 0;
-    height: 550px;
+    height: 400px;
     background: rgb(13, 13, 153);
     mix-blend-mode: overlay;
 }
@@ -98,7 +98,7 @@ nav>*+*{
  .video-section{
     width: 100%;
     height: 100%;
-    margin-top: -3.3em;
+    /* margin-top: -3.3em; */
     padding: .6em;
     color: blue;
     background:rgb(224, 219, 219);
@@ -120,8 +120,8 @@ video{
 .video-container>*{
     flex-basis: 45%;
     /* border-radius: 80px; */
-    min-width: 15em;
-    max-width: 100em;
+    min-width: 19rem;
+    max-width: 100rem;
 }
 
 /* MUSIC PLAYER */
@@ -181,8 +181,8 @@ progress{
 }
 .albums-container>*{
     flex-basis: 30%;
-    min-width: 15em;
-    max-width: 100em;
+    min-width: 19rem;
+    max-width: 100rem;
     margin-right: 2em;
     margin-bottom: 2em;
 }
@@ -214,12 +214,12 @@ progress{
     justify-content: center;
     align-items: center;
     gap:2em;
-   
+    padding: 2em;
 }
 .card-container >*{
     flex-basis: 30%;
-    min-width: 12em;
-    max-width: 19em;
+    min-width: 19rem;
+    max-width: 100rem;
 }
 .card{
     background: #fff;
