@@ -24,6 +24,7 @@
        <h3 class="last-item">Contact</h3> -->
     </nav>
    </header>
+   <main>
    <section class="showcase">
     <div class="show-case-text">
         <div class="text">
@@ -47,17 +48,29 @@
 
 <div class="video-container">
 
-   <div class="video">
-   <video src="./videos/video.mp4" controls></video>
+   <div class="video video-player">
+   <video src="./videos/video.mp4" id="video-element"></video>
+   <div class="controls-video"> 
+     <button class="play-btn"></button>  
    </div>
-   <div class="video">
-    <video src="./videos/production ID_4089575.mp4" controls></video>
+   </div>
+   <div class="video video-player">
+    <video src="./videos/production ID_4089575.mp4" id="video-element"></video>
+    <div class="controls-video ">
+        <button class="play-btn"></button> 
     </div>
-    <div class="video">
-    <video src="./videos/Pexels Videos 991382.mp4" controls></video>
     </div>
-    <div class="video">
-    <video src="./videos/production ID_4088836.mp4" controls></video>
+    <div class="video video-player">
+    <video src="./videos/Pexels Videos 991382.mp4" id="video-element"></video>
+    <div class="controls-video"> 
+        <button class="play-btn"></button>
+    </div>
+    </div>
+    <div class="video video-player">
+    <video src="./videos/production ID_4088836.mp4" id="video-element"></video>
+    <div class="controls-video">     
+        <button class="play-btn"></button>
+    </div>
     </div>
 </div>
 </section>
@@ -75,7 +88,7 @@
       </div> 
       <h3 class="song-title">Midnight drum</h3>
       <h4>Nattalie Rise</h4>
-      <div class="controls">
+      <div class="controls-audio">
           <div class="prev-btn"><i class="fas fa-backward fa-lg"></i> </div>
           <div class="play-btn"> <i class="fas fa-play fa-lg "></i> </div>
           <div class="next-btn"> <i class="fas fa-forward fa-lg"></i> </div>
@@ -89,7 +102,7 @@
     </div>
 </section>
 
-<section class="audio-section">
+<!-- <section class="audio-section">
 <div class="section-titles">
    <h4 class="title2 sub-heading">AUDIO MUSIC</h4>
    <h2 class="title2">LATEST ALBUMS</h2>
@@ -113,7 +126,7 @@
         <h5 class="sub-heading">Apple Music</h5>
     </div>
    </div>
-</section>
+</section> -->
 <section class="tours-section">
     <div class="section-titles">
         <h4 class="title2">TOURS</h4>
@@ -157,15 +170,16 @@
     <article class="shop-product">
       <img src="images/grey--tshirt.jpg" alt="" class="product">
       <div class="card-text">
-      <h3>$99</h3> 
-      <h5>Dj Nav Tshirt- Available</h5> 
+      <h3>$99 <i class="fas fa-cart-plus"></i></h3> 
+      <h5>Dj Nav Tshirt- Available </h5> 
+      
     </div>
     </article>
          
     <article class="shop-product">
         <img src="images/blue-cape.jpg" alt="" class="product">
         <div class="card-text">
-        <h3>$25</h3> 
+        <h3>$25 <i class="fas fa-cart-plus"></i></h3> 
         <h5>Dj Nav hat- Available</h5> 
         </article>
       </article>
@@ -173,7 +187,7 @@
     <article class="shop-product">
         <img src="images/hoodie-blck.jpg" alt="" class="product">
         <div class="card-text">
-        <h3>$299</h3> 
+        <h3>$299 <i class="fas fa-cart-plus"></i></h3> 
         <h5>Dj Nav hoodie- Available</h5>
         </div> 
       </article>
@@ -237,7 +251,7 @@
     <a href="#"> <i class="fab fa-instagram"></i></a>
 </div>
 </footer>
-
+</main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simple-lightbox.min.js"></script>
@@ -246,3 +260,4 @@
         const $gallery = $('.gallery a').simpleLightbox();
       });
 </script>
+<script src="index.js"></script>
