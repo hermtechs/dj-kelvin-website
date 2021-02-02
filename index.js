@@ -25,6 +25,10 @@ function VideoPlayerController(event) {
     ClickedPlayBtn.classList.remove("pause-btn");
   }
 
+  // changing the playBtn from pause back to play after the video has stopped playing
+  videoToBePlayed.onended = () => {
+    ClickedPlayBtn.classList.remove("pause-btn");
+  };
   //WORKING ON THE VIDEO PROGRESS-BAR
   videoToBePlayed.addEventListener("timeupdate", changeVideoProgressBar);
   function changeVideoProgressBar() {
