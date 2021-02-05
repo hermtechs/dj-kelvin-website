@@ -110,7 +110,7 @@ main {
 .video-section {
   width: 100%;
   height: 100%;
-  margin-top: 5rem;
+  margin-top: 4.1rem;
   padding: 0.6rem;
   color: blue;
   background: rgb(224, 219, 219);
@@ -337,34 +337,46 @@ footer a {
 /* video player */
 .video-player {
   position: relative;
-  overflow: hidden;
 }
 .controls-video {
   height: 30px;
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.7);
+  /* background-color: rgb(0, 0, 0, 0.7); */
   position: absolute;
   bottom: 0;
   display: flex;
   align-items: center;
   padding-right: 0.2em;
-  transition: 200ms;
-  transform: translateY(100%);
 }
-.video-player:hover .controls-video {
-  transform: translateY(0%);
+
+.video-player:hover .play-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .play-btn {
   background: none;
   border: 0;
   outline: 0;
-  color: rgb(20, 55, 167);
+  color: rgb(214, 34, 88);
+  position: absolute;
+  left: 45%;
+  bottom: 270%;
+  display: none;
+  font-size: 2em;
+  font-weight: 400;
 }
 .controls-video .video-progress-bar {
   content: "";
   height: 2px;
   /* width: 100%; */ /*To Be Manipulated with Javascript*/
-  background-color: rgb(21, 18, 192);
+  background-color: rgb(214, 34, 88);
+  font-weight: 400;
+  margin-top: 0.9em;
+  visibility: hidden;
+}
+.video-player:hover .controls-video .video-progress-bar {
+  visibility: visible;
 }
 button.play-btn::before {
   content: "\f144";
