@@ -44,10 +44,17 @@ header {
   left: 0;
 }
 .nav-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
+}
+.nav-links > * {
+  padding-right: 0.5em;
+}
+@media (max-width: 500px) {
+  .hide-on-small-screen {
+    display: none;
+  }
 }
 /* SECTIION SHOWCASE     */
 .showcase {
@@ -88,7 +95,7 @@ header {
 .btn {
   display: inline-block;
   letter-spacing: 4px;
-  padding: 0.11em 1em 0.1em 1em;
+  padding: 0.12em 1em 0.12em 1em;
   margin-top: 2rem;
   border-radius: 4.5px;
   background: rgb(13, 13, 112);
