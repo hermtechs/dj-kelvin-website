@@ -10,22 +10,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header>
-       <!-- <h3>Home</h3>
-       <h3>Music</h3> -->
-       <nav>
-       <a href="#"><h3>Music</h3></a>
-       <a href="#"><h3>Shop</h3></a>
-       <a href="#" class="logo"> <h3>Dj N<i class="fab fa-napster">V</i> </h3></a>
-       <i class="fas fa-bars"></i>
+    <header>
+        
+            <input type="checkbox" id="nav-toggle-checkbox" class="nav-toggle">
+            
+        <a href="#" class="logo"> Dj N<i class="fab fa-napster">V</i></a>
 
-       <!-- <h3>Events</h3>
-       <h3>Shop</h3>
-       <h3 class="last-item">Contact</h3> -->
-    </nav>
-   </header>
+    <nav class="nav-links">  
+      <ul>    
+       <li> <a href="#" class="hide-on-small-screen">Music</a> </li>
+       <li> <a href="#" class="hide-on-small-screen">Shop</a></li>
+       <li> <a href="#" class="hide-on-small-screen">About</a></li>
+       <li> <a href="#" class="hide-on-small-screen">Events</a></li>
+       <li> <a href="#" class="hide-on-small-screen">Contact</a></li>
+       </ul>
+     </nav>
+    </header>
+    <label for="nav-toggle-checkbox" class="nav-toggle-label">
+        <span></span>
+    </label>
    <main>
    <section class="showcase">
+               
     <div class="show-case-text">
         <div class="text">
             <h2 >Let The Mix Begin</h2>
@@ -51,25 +57,29 @@
    <div class="video video-player">
    <video src="./videos/video.mp4" id="video-element"></video>
    <div class="controls-video"> 
-     <button class="play-btn"></button>  
+     <button class="play-btn"></button>
+    <div class="video-progress-bar"></div>
    </div>
    </div>
    <div class="video video-player">
     <video src="./videos/production ID_4089575.mp4" id="video-element"></video>
     <div class="controls-video">
-        <button class="play-btn"></button> 
+        <button class="play-btn"></button>
+        <div class="video-progress-bar"></div> 
     </div>
     </div>
     <div class="video video-player">
     <video src="./videos/Pexels Videos 991382.mp4" id="video-element"></video>
     <div class="controls-video"> 
         <button class="play-btn"></button>
+        <div class="video-progress-bar"></div>
     </div>
     </div>
     <div class="video video-player">
     <video src="./videos/production ID_4088836.mp4" id="video-element"></video>
     <div class="controls-video">     
         <button class="play-btn"></button>
+        <div class="video-progress-bar"></div>
     </div>
     </div>
 </div>
@@ -113,13 +123,11 @@
         <h3 class="sub-heading">Electronic</h3>
         <h5 class="sub-heading">Apple Music</h5>
     </div>
-
     <div class="album-card">
         <img src="./images/flower-design.webp" alt="">
         <h3 class="sub-heading">Electronic</h3>
         <h5 class="sub-heading">Apple Music</h5>
     </div>
-
     <div class="album-card">
         <img src="./images/gear.webp" alt="">
         <h3 class="sub-heading">Electronic</h3>
@@ -238,7 +246,7 @@
         <img src="./images/8.jpg" alt=""/>  
          </a>
     </div>
-</section>
+</section> 
 
    <footer>
        <h5 class="copyrite">&copy; Dj Nav. All rights reserved. 
