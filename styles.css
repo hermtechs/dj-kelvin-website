@@ -29,6 +29,7 @@ header{
 nav{
   position: absolute;
   background: var(--background-clr-nav);
+  opacity: 0.92;
   width: 100%;
   text-align: left;
   padding: 0.2rem 0rem 2rem 5rem;
@@ -40,11 +41,13 @@ nav ul li{
   list-style: none;
   margin-top: 1rem;
 }
+
 .nav-toggle{
   display: none; /*checkbox*/
 }
+
 #nav-toggle-checkbox:checked ~ nav{
-   transform: scale(1,1);
+  transform: scale(1,1);
 }
 
 .nav-toggle-label{
@@ -73,12 +76,61 @@ nav ul li{
   position: relative;
   bottom:7px;
 }
+nav  a:after{
+  display: block;
+  content: "";
+  height: 2px;
+  width: 2.2rem;
+  background-color: #fff;
+  transition: 300ms ease-in-out;
+  transform: scale(0);
+  transform-origin: left;
+}
+nav a:hover:after{
+  transform: scale(1);
+}
+/* .full-screen-overlay{
+  position: fixed;
+  z-index: 1900;
+  background:red;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+
+} */
+
 /* NAVIGATION BAR ON BIG SCREENS */
-@media screen and (min-width:600px){
- .nav-toggle-label{display: none;}
+@media screen and (min-width:720px){
+ .nav-toggle-label{ display: none;}
+
  header{
    display: grid;
-   grid-template-columns: 1fr auto minmax(200px, 1fr) 1fr;
+   grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+ }
+ .logo{
+   grid-column: 2/3;
+   z-index: 3000;
+   display: flex;
+   align-items: center;
+
+ }
+ nav{
+   all: unset;
+   grid-column: 3/4;
+   margin-bottom: 0.95rem;
+ }
+ nav ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ nav ul >*{
+   margin-right: 1.5rem;
+ }
+
+ .show-case-text{
+   padding-top: 1.5rem;
  }
 }
 

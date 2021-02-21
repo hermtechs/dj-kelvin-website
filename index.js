@@ -1,3 +1,34 @@
+//Rotating the humburger menu on  Click
+const humburger = document.getElementById('nav-toggle-checkbox');
+const navSpan = document.querySelector('.nav-span');
+const fullScreenOverlay = document.querySelector('.full-screen-overlay');
+const navigation = document.getElementsByTagName('nav')[0];
+
+humburger.addEventListener('click', ()=>{
+ if(navSpan.style.transform === 'rotate(20deg)'){
+  navSpan.style.transform = 'rotate(0deg)'
+ }
+ else{
+  navSpan.style.transform = 'rotate(20deg)'
+ }
+
+
+//  fullScreenOverlay.style.visibility = 'visible'
+
+ })
+//  fullScreenOverlay.addEventListener('click', ()=>{
+//   navSpan.style.transform = 'rotate(0deg)'
+//   if(navigation.style.transform=='scale(1,0)'){
+//     navigation.style.transform='scale(0,1)'
+//   }
+//   else{
+//     navigation.style.transform='scale(1,0)'
+//   }
+ 
+//  })
+
+
+// VIDEO PLAYERS 
 const playPauseBtn = document.querySelectorAll(".play-btn");
 
 //ENABLING THE VIDEOS TO BE PLAYED AND PAUSED
